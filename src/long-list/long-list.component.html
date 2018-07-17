@@ -1,0 +1,10 @@
+<div class="wrapper" appScroll (load)="loadMoreData($event)">
+  <ul>
+    <li 
+      *ngFor="let key of pickedList; trackBy: trackByFn" 
+      class="list-item" 
+      [ngStyle]="currentStyles(key)">
+      {{ key }}
+    </li>
+  </ul>
+</div>
